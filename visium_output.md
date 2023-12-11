@@ -60,7 +60,7 @@ The top of the page will display the title of the run and the pipeline used. The
 The summary tab starts with hero metrics and sequencing metrics. Click the `?` for definitions of each metric.
 
 
-<center> Table 1.  Sequencing Metrics in the Space Ranger summary file</center>
+    Table 1.  Sequencing Metrics in the Space Ranger summary file
 
 
 | Metrics                          | Definition                                                                                             | Expected Value          | Notes                                                                                                                                                              |
