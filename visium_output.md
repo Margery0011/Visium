@@ -60,19 +60,20 @@ The top of the page will display the title of the run and the pipeline used. The
 The summary tab starts with hero metrics and sequencing metrics. Click the `?` for definitions of each metric.
 
 
-<center> Table 1. Metrics in the Space Ranger summary file</center>
+<center> Table 1.  Sequencing Metrics in the Space Ranger summary file</center>
 
 
 | Metrics                          | Definition                                                                                             | Expected Value          | Notes                                                                                                                                                              |
 |----------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Sequencing Metrics**           |                                                                                                        |                         |                                                                                                                                                                    |
+|          |                                                                                                        |                         |                                                                                                                                                                    |
 | Number of reads                  | Total number of read pairs that were assigned to this library in demultiplexing                         | Sequencing output dependent | Lower than expected may indicate poor sequencing run (overclustering, underclustering, low % passing filter).                                                        |
 | Valid barcodes                   | Fraction of reads with barcodes that match the whitelist* after barcode correction                     | >75%                    | Low valid barcodes may indicate sequencing issues (such as low Read 1 Q30 score).                                                                                  |
 | Valid UMIs                       | Fraction of reads with valid UMIs; i.e. UMI sequences that do not contain Ns and that are not homopolymers | >75%                    | Low valid UMIs may indicate issues with sequencing or library quality.                                                                                             |
 | Sequencing saturation            | The fraction of reads originating from an already-observed UMI. This is a function of library complexity and sequencing depth | Dependent upon sequencing depth and sample complexity | Dependent on library complexity, sequencing depth, and experiment analysis goals. Lower sequencing saturation indicates a high proportion of the library complexity has not been captured by sequencing. |
 | Q30 bases in barcode, Sample Index, or UMI | Fraction of tissue-associated barcode, Sample Index, or UMI bases with Q-Score ≥30, excluding very low quality/no call (Q≤2) bases from the denominator | Sequencing platform dependent | Low Q30 base percentages could indicate sequencing issue such as sub-optimal loading concentration.                                                                 |
 | Q30 bases in probe read          | Fraction of RNA read bases with Q-score ≥ 30, excluding very low quality/no-call (Q ≤2) bases from the denominator. This is Read 2 for the Visium v1 chemistry | Sequencing platform dependent, ideally >65% | Expected to be lower than Q30 bases in barcode or UMI (Read 1) or Sample Index (i7 or i5 read) and is sequencing platform dependent. Low Q30 base percentages could indicate sequencing issue such as sub-optimal loading concentration. |
-| **Spots**           |                                                                                                        |                         |   
+
+<center> Table 2.  Spots Metrics in the Space Ranger summary file</center>
 
 | Metric            | Definition                                                              | Expected Value                         | Notes |
 |-------------------|-------------------------------------------------------------------------|----------------------------------------|-------|
@@ -81,8 +82,8 @@ The summary tab starts with hero metrics and sequencing metrics. Click the `?` f
 | Mean reads under tissue per spot | The number of reads under tissue divided by the number of barcodes associated with a spot under tissue | Dependent on tissue type, RNA quality, and sequencing depth | Lower than expected values may be biological (low transcriptional diversity) or may indicate low sequencing depth, library complexity, or quality. |
 | Median UMI counts per spot    | The median number of UMI counts per tissue covered spot                     | Dependent on tissue type, RNA quality, and sequencing depth |                                                                                                                       |
 | Median genes per spot        | The median number of genes detected per tissue covered spot. Detection is defined as the presence of at least one UMI count | Dependent on tissue type, RNA quality, and sequencing depth |                                                                                                                       |
-| Genes detected                | The number of unique genes from the filtered probe set with at least one UMI count in any tissue covered spot | Dependent on tissue type, RNA quality, and sequencing depth |                                                                                                                       |
-| **Mapping Metrics**           |                                                                                                        |                         |   
+| Genes detected                | The number of unique genes from the filtered probe set with at least one UMI count in any tissue covered spot | Dependent on tissue type, RNA quality, and sequencing depth |                                                                   
+<center> Table 3.  Maps Metrics in the Space Ranger summary file</center>
 
 | Metric            | Definition                                                              | Expected Value                         | Notes |
 |-------------------|-------------------------------------------------------------------------|----------------------------------------|-------|
