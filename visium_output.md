@@ -91,6 +91,10 @@ The summary tab starts with hero metrics and sequencing metrics. Click the `?` f
 | Reads mapped confidently to probe set | Fraction of reads that mapped uniquely to a probe in the probe set           | Ideally >50%                   | Lower than expected values could be indicative of low aggregate expression, use of the wrong probe set, or inefficient targeting to the probe set. |
 | Reads mapped confidently to the filtered probe set | Fraction of reads from probes that map to a unique gene. These reads are considered for UMI counting by default. This metric will be None when probe filtering is disabled. For more information on probe filtering visit the 10x Genomics Support website | Ideally >50% | |
 
+![Alternative text for fourth image](https://github.com/Margery0011/Visium_CSO_Service/blob/main/Figures/Screenshot%202023-12-11%20at%201.43.26%20PM.png?raw=true)
+
+<center> Figure 1.4 Tissue Detection and Fiducial Alignment </center>
+
 
 The **Tissue Detection and Fiducial Alignment image** shows the tissue image in gray tones with an overlay of the aligned fiducial frame (open blue circles) and the capture area spots (gray circles). For the latter, the circles filled in red denote selected tissue-associated spots and the remaining open gray circles denote unselected spots. Hover mouse cursor over the image to magnify the view. Confirm fiducial frame aligns well with fiducial spots, e.g. the corner shapes match, and confirm selection of tissue-covered spots. If the result shows poor fiducial alignment or tissue detection, consider sharing the image with support@10xgenomics.com so they can improve the algorithm. Otherwise, perform manual alignment and spot selection with Loupe Browser.
 
