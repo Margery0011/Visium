@@ -92,6 +92,10 @@ The summary tab starts with hero metrics and sequencing metrics. Click the `?` f
 | Reads mapped confidently to the filtered probe set | Fraction of reads from probes that map to a unique gene. These reads are considered for UMI counting by default. This metric will be None when probe filtering is disabled. For more information on probe filtering visit the 10x Genomics Support website | Ideally >50% | |
 
 
+The **Tissue Detection and Fiducial Alignment image** shows the tissue image in gray tones with an overlay of the aligned fiducial frame (open blue circles) and the capture area spots (gray circles). For the latter, the circles filled in red denote selected tissue-associated spots and the remaining open gray circles denote unselected spots. Hover mouse cursor over the image to magnify the view. Confirm fiducial frame aligns well with fiducial spots, e.g. the corner shapes match, and confirm selection of tissue-covered spots. If the result shows poor fiducial alignment or tissue detection, consider sharing the image with support@10xgenomics.com so they can improve the algorithm. Otherwise, perform manual alignment and spot selection with Loupe Browser.
+
+
+
 ### Matrices
 
 Space Ranger outputs unfiltered (raw_feature_bc_matrix) and filtered feature-barcode (filtered_feature_bc_matrix) matrices in two file formats: the Market Exchange Format (MEX, described on this page) and Hierarchical Data Format (HDF5).
