@@ -11,11 +11,13 @@
 
 Following is the output folder we will get from `spaceranger`. The outs folder contains the final pipeline output files which including what we want for downstream analysis.
 
-![Alt text](<Screenshot 2023-12-11 at 9.36.12 AM.png>)
+![Alt text](https://github.com/Margery0011/Visium_CSO_Service/blob/main/Figures/Screenshot%202023-12-11%20at%209.36.12%20AM.png?raw=true)
+
 
 <center>Figure 1.1: Overview of the folder generate from sapceranger</center>
 
-![Alt text](<Screenshot 2023-12-11 at 9.42.50 AM.png>)
+![Alt text for second image](https://github.com/Margery0011/Visium_CSO_Service/blob/main/Figures/Screenshot%202023-12-11%20at%209.42.50%20AM.png?raw=true)
+
 
 <center>Figure 1.2: Overview of the outs folder</center>
 
@@ -50,11 +52,16 @@ The top of the page will display the title of the run and the pipeline used. The
 #### Summary tab
 
 
-![Alt text](<Screenshot 2023-12-11 at 10.29.15 AM.png>)
+![Alternative text for third image](https://github.com/Margery0011/Visium_CSO_Service/blob/main/Figures/Screenshot%202023-12-11%20at%2010.29.15%20AM.png?raw=true)
 
-  The summary tab starts with hero metrics and sequencing metrics. Click the `?` for definitions of each metric.
+<center>Figure 1.3 Summary tab example</center>
+
+
+The summary tab starts with hero metrics and sequencing metrics. Click the `?` for definitions of each metric.
+
 
 <center> Table 1. Metrics in the Space Ranger summary file</center>
+
 
 | Metrics                          | Definition                                                                                             | Expected Value          | Notes                                                                                                                                                              |
 |----------------------------------|--------------------------------------------------------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
