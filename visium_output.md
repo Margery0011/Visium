@@ -14,12 +14,12 @@ Following is the output folder we will get from `spaceranger`. The outs folder c
 ![Alt text](https://github.com/Margery0011/Visium_CSO_Service/blob/main/Figures/Screenshot%202023-12-11%20at%209.36.12%20AM.png?raw=true)
 
 
-<center>Figure 1.1: Overview of the folder generate from sapceranger</center>
+    Figure 1.1: Overview of the folder generate from sapceranger
 
 ![Alt text for second image](https://github.com/Margery0011/Visium_CSO_Service/blob/main/Figures/Screenshot%202023-12-11%20at%209.42.50%20AM.png?raw=true)
 
 
-<center>Figure 1.2: Overview of the outs folder</center>
+    Figure 1.2: Overview of the outs folder
 
 
 Above is what we can find in the `outs` folder. It contains some summary information of the sequencing data, the annotated read sequences, and gene expression matrices we commonly work on. Following is some important output files we want to look at.
@@ -54,7 +54,7 @@ The top of the page will display the title of the run and the pipeline used. The
 
 ![Alternative text for third image](https://github.com/Margery0011/Visium_CSO_Service/blob/main/Figures/Screenshot%202023-12-11%20at%2010.29.15%20AM.png?raw=true)
 
-<center>Figure 1.3 Summary tab example</center>
+    Figure 1.3 Summary tab example
 
 
 The summary tab starts with hero metrics and sequencing metrics. Click the `?` for definitions of each metric.
@@ -73,7 +73,7 @@ The summary tab starts with hero metrics and sequencing metrics. Click the `?` f
 | Q30 bases in barcode, Sample Index, or UMI | Fraction of tissue-associated barcode, Sample Index, or UMI bases with Q-Score ≥30, excluding very low quality/no call (Q≤2) bases from the denominator | Sequencing platform dependent | Low Q30 base percentages could indicate sequencing issue such as sub-optimal loading concentration.                                                                 |
 | Q30 bases in probe read          | Fraction of RNA read bases with Q-score ≥ 30, excluding very low quality/no-call (Q ≤2) bases from the denominator. This is Read 2 for the Visium v1 chemistry | Sequencing platform dependent, ideally >65% | Expected to be lower than Q30 bases in barcode or UMI (Read 1) or Sample Index (i7 or i5 read) and is sequencing platform dependent. Low Q30 base percentages could indicate sequencing issue such as sub-optimal loading concentration. |
 
-<center> Table 2.  Spots Metrics in the Space Ranger summary file</center>
+    Table 2.  Spots Metrics in the Space Ranger summary file
 
 | Metric            | Definition                                                              | Expected Value                         | Notes |
 |-------------------|-------------------------------------------------------------------------|----------------------------------------|-------|
@@ -83,7 +83,7 @@ The summary tab starts with hero metrics and sequencing metrics. Click the `?` f
 | Median UMI counts per spot    | The median number of UMI counts per tissue covered spot                     | Dependent on tissue type, RNA quality, and sequencing depth |                                                                                                                       |
 | Median genes per spot        | The median number of genes detected per tissue covered spot. Detection is defined as the presence of at least one UMI count | Dependent on tissue type, RNA quality, and sequencing depth |                                                                                                                       |
 | Genes detected                | The number of unique genes from the filtered probe set with at least one UMI count in any tissue covered spot | Dependent on tissue type, RNA quality, and sequencing depth |                                                                   
-<center> Table 3.  Maps Metrics in the Space Ranger summary file</center>
+    Table 3.  Maps Metrics in the Space Ranger summary file
 
 | Metric            | Definition                                                              | Expected Value                         | Notes |
 |-------------------|-------------------------------------------------------------------------|----------------------------------------|-------|
@@ -93,7 +93,7 @@ The summary tab starts with hero metrics and sequencing metrics. Click the `?` f
 
 ![Alternative text for fourth image](https://github.com/Margery0011/Visium_CSO_Service/blob/main/Figures/Screenshot%202023-12-11%20at%201.43.26%20PM.png?raw=true)
 
-<center> Figure 1.4 Tissue Detection and Fiducial Alignment </center>
+    Figure 1.4 Tissue Detection and Fiducial Alignment
 
 
 The **Tissue Detection and Fiducial Alignment image** shows the tissue image in gray tones with an overlay of the aligned fiducial frame (open blue circles) and the capture area spots (gray circles). For the latter, the circles filled in red denote selected tissue-associated spots and the remaining open gray circles denote unselected spots. Hover mouse cursor over the image to magnify the view. Confirm fiducial frame aligns well with fiducial spots, e.g. the corner shapes match, and confirm selection of tissue-covered spots. If the result shows poor fiducial alignment or tissue detection, consider sharing the image with support@10xgenomics.com so they can improve the algorithm. Otherwise, perform manual alignment and spot selection with Loupe Browser.
