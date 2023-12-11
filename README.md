@@ -3,9 +3,13 @@
 # 10x Visium Spatial Transcriptomics  Data Analysis Service
 
 
-## Where to find 
+## Space Ranger 
 
-- [Space Ranger Output Explanation](https://github.com/Margery0011/Visium_CSO_Service/blob/main/visium_output.md)
+Visium Spatial Gene Expression is a next-generation molecular profiling solution for classifying tissue based on gene and protein expression. Space Ranger is a set of analysis pipelines that process Visium Spatial Gene Expression data with brightfield and fluorescence microscope images. Space Ranger allows users to map the whole transcriptome in formalin- fixed paraffin-embedded (FFPE), fixed frozen (FxF), and fresh frozen (FF) tissues to discover novel insights into normal development, disease pathology, and clinical translational research.
+
+- **spaceranger count** takes a microscope slide image and FASTQ files and performs alignment, tissue detection, fiducial detection, and barcode/UMI counting. The pipeline uses Visium Spatial Barcodes to generate feature-barcode matrices, determine clusters, and perform gene expression analysis. In addition to fresh-frozen tissues, spaceranger count is also used for single-library analysis of FFPE and Protein Expression.
+
+- [Space Ranger Count Output Explanation](https://github.com/Margery0011/Visium_CSO_Service/blob/main/visium_output.md)
 
 
 ## Downstream Analysis
