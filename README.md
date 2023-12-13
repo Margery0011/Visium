@@ -19,10 +19,39 @@ Visium Spatial Gene Expression is a next-generation molecular profiling solution
 - [**Seurat**: Analysis, visualization, and integration of spatial datasets with Seurat
 ](https://satijalab.org/seurat/articles/spatial_vignette.html)
 
+```
+# Load Visium data in Seurat
+
+Load10X_Spatial(
+  data.dir,
+  filename = "filtered_feature_bc_matrix.h5",
+  assay = "Spatial",
+  slice = "slice1",
+  filter.matrix = TRUE,
+  to.upper = FALSE,
+  image = NULL,
+  ...
+)
+
+```
+
 ### Python
 
 - [**Scanpy**: Analysis and visualization of spatial transcriptomics data](https://scanpy-tutorials.readthedocs.io/en/latest/spatial/basic-analysis.html)
--  [**Squidoy**: Analyze Visium H&E data](https://squidpy.readthedocs.io/en/stable/notebooks/tutorials/tutorial_visium_hne.html)
+
+```
+# Load Visium data in Scanpy
+
+scanpy.read_visium(path, genome=None, *, count_file='filtered_feature_bc_matrix.h5', library_id=None, load_images=True, source_image_path=None)
+```
+-  [**Squidpy**: Analyze Visium H&E data](https://squidpy.readthedocs.io/en/stable/notebooks/tutorials/tutorial_visium_hne.html)
+
+```
+# Load Visium data in Squidpy
+
+squidpy.read.visium(path, *, counts_file='filtered_feature_bc_matrix.h5', library_id=None, load_images=True, source_image_path=None, **kwargs)
+
+```
 
 ### Loupe Browser
 
@@ -44,4 +73,4 @@ Visium Spatial Gene Expression is a next-generation molecular profiling solution
 - Spacexr/Robust cell-type decomposition (RCTD)
 - Seurat label transfer
 - Cell2location
-- STdeconvolve:
+- STdeconvolve
